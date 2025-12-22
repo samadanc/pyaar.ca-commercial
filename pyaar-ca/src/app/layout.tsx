@@ -11,8 +11,22 @@ export const metadata: Metadata = {
     description: "Discover your love language and find out if you're compatible with your partner",
     url: "https://pyaar.ca",
     siteName: "Pyaar.ca",
-    type: "website"
-  }
+    type: "website",
+    images: [
+      {
+        url: "https://pyaar.ca/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Love Language Compatibility Test",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pyaar.ca - Love Language Compatibility Test",
+    description: "Discover your love language and relationship compatibility",
+    images: ["https://pyaar.ca/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
