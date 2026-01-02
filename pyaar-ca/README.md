@@ -109,17 +109,63 @@ The scoring logic is implemented in the `calculateResults.ts` file in the `src/l
 4. Save your changes.
 
 ## 🚀 Deployment
-To deploy the application to Cloudflare Pages:
-1. Push your code to a GitHub repository.
-2. Log in to your Cloudflare account and navigate to Pages.
-3. Create a new project and connect your GitHub repository.
-4. Set the build command to `npm run build` and the build output directory to `.open-next`.
-5. Click "Save and Deploy".
 
-Or use the OpenNext CLI:
+### Cloudflare Pages Deployment
+
+This project uses OpenNext for Cloudflare to deploy Next.js applications.
+
+#### Method 1: Using Git Integration (Recommended)
+
+1. Push your code to a GitHub repository
+2. Log in to your [Cloudflare Dashboard](https://dash.cloudflare.com) and navigate to Pages
+3. Click "Create a project" → "Connect to Git"
+4. Select your repository
+5. Configure the build settings:
+   - **Project name**: `pyaar-ca` (or your preferred name)
+   - **Production branch**: `main` (or your default branch)
+   - **Framework preset**: None (or Next.js)
+   - **Build command**: `npm run build && npx @opennextjs/cloudflare@latest`
+   - **Build output directory**: `.open-next/assets`
+   - **Root directory**: `pyaar-ca` ⚠️ **Important: Set this to your project subdirectory!**
+   
+6. Click "Save and Deploy"
+
+#### Method 2: Using Wrangler CLI
+
+For direct deployment using the Wrangler CLI:
+
 ```bash
-npm run deploy
+# Build the application
+npm run build
+
+# Deploy to Cloudflare
+npx wrangler pages deploy .open-next/assets --project-name=pyaar-ca
 ```
+
+Or use the convenient scripts:
+
+```bash
+# Build and deploy
+npm run deploy
+
+# Build and preview locally
+npm run preview
+```
+
+### Environment Variables
+
+If you need to add environment variables:
+1. Go to your Cloudflare Pages project settings
+2. Navigate to "Settings" → "Environment variables"
+3. Add your variables for production and preview environments
+
+### Custom Domain
+
+To add a custom domain (pyaar.ca):
+1. Go to your Pages project → "Custom domains"
+2. Click "Set up a custom domain"
+3. Enter `pyaar.ca` and follow the DNS configuration instructions
+
 ## 🤝 Contributing
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
 1. Fork the repository
