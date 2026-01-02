@@ -124,7 +124,7 @@ This project uses OpenNext for Cloudflare to deploy Next.js applications.
    - **Project name**: `pyaar-ca` (or your preferred name)
    - **Production branch**: `main` (or your default branch)
    - **Framework preset**: None (or Next.js)
-   - **Build command**: `npm run build && npx @opennextjs/cloudflare@latest`
+   - **Build command**: `npm run build && npx @opennextjs/cloudflare@latest build`
    - **Build output directory**: `.open-next/assets`
    - **Root directory**: `pyaar-ca` ⚠️ **Important: Set this to your project subdirectory!**
    

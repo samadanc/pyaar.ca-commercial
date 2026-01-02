@@ -22,7 +22,7 @@ In your Cloudflare Pages project settings, update the **Root directory** to poin
 
 **Cloudflare Pages Settings:**
 - **Root directory**: `pyaar-ca`
-- **Build command**: `npm run build && npx @opennextjs/cloudflare@latest`
+- **Build command**: `npm run build && npx @opennextjs/cloudflare@latest build`
 - **Build output directory**: `.open-next/assets`
 
 ### Option 2: Move Files to Repository Root
@@ -39,7 +39,7 @@ rmdir pyaar-ca
 
 Then update Cloudflare settings:
 - **Root directory**: `/` (or leave blank)
-- **Build command**: `npm run build && npx @opennextjs/cloudflare@latest`
+- **Build command**: `npm run build && npx @opennextjs/cloudflare@latest build`
 - **Build output directory**: `.open-next/assets`
 
 ## Step-by-Step: Fix Current Deployment
@@ -50,7 +50,7 @@ Then update Cloudflare settings:
 4. Under "Build configurations", click **Edit configuration**
 5. Update these fields:
    - **Root directory**: `pyaar-ca`
-   - **Build command**: `npm run build && npx @opennextjs/cloudflare@latest`
+   - **Build command**: `npm run build && npx @opennextjs/cloudflare@latest build`
    - **Build output directory**: `.open-next/assets`
 6. Click **Save**
 7. Go to **Deployments** and click **Retry deployment**
@@ -96,7 +96,7 @@ Once deployment works:
 
 ### Build succeeds but site doesn't work
 - Check the build output directory is set to `.open-next/assets`
-- Verify the build command includes `npx @opennextjs/cloudflare@latest`
+- Verify the build command includes `npx @opennextjs/cloudflare@latest build`
 
 ### Pages show 404 errors
 - Ensure all routes are properly generated during build
