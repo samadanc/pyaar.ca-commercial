@@ -1,5 +1,4 @@
 import Link from "next/link";
-import EzoicAd from "@/components/EzoicAd";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -47,7 +46,6 @@ export default function Home() {
             Take our comprehensive love language quiz to understand how you and your partner express and receive love. Based on Dr. Gary Chapman&apos;s 5 love languages theory, this test helps improve your relationship communication.
           </p>
 
-          <EzoicAd placementId={101} className="my-8" />
 
           <Link
             href="/quiz"
@@ -58,7 +56,6 @@ export default function Home() {
           </Link>
         </article>
 
-        <EzoicAd placementId={102} className="my-8" />
 
         <section className="grid md:grid-cols-3 gap-8 mt-16 max-w-6xl mx-auto">
           <article className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow">
@@ -88,7 +85,6 @@ export default function Home() {
           </article>
         </section>
 
-        <EzoicAd placementId={103} className="my-8 mt-16" />
 
         <section className="mt-16 max-w-4xl mx-auto bg-white rounded-2xl p-8 shadow-xl">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Why Take a Love Language Test?</h2>

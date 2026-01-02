@@ -32,10 +32,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">Advertising</h2>
             <p className="text-gray-600">
-              We use Ezoic to manage and display advertisements on our site. Ezoic may collect and use certain data for advertising purposes. For more information about Ezoic&apos;s privacy practices, please visit{" "}
-              <a href="https://www.ezoic.com/privacy-policy/" className="text-purple-600 hover:underline" target="_blank" rel="noopener noreferrer">
-                Ezoic&apos;s Privacy Policy
-              </a>.
+              We use Google AdSense to manage and display advertisements on our site. Google AdSense may collect and use certain data for advertising purposes. You can learn more about how Google uses data in their privacy policy.
             </p>
           </section>
 

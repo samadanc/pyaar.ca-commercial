@@ -2,7 +2,6 @@
 
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import EzoicAd from "@/components/EzoicAd";
 import { Suspense } from "react";
 
 function ResultsContent() {
@@ -73,7 +72,6 @@ function ResultsContent() {
           </div>
         </div>
 
-        <EzoicAd placementId={104} className="my-8" />
 
         <div className="bg-white rounded-3xl shadow-2xl p-8 mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-800 text-center">

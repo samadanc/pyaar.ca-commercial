@@ -31,7 +31,7 @@ Based on Dr. Gary Chapman's research on how people express and receive love.
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Deployment**: Cloudflare Pages with [OpenNext](https://opennext.js.org/cloudflare)
-- **Monetization**: Ezoic Ad Network
+- **Monetization**: Google AdSense
 
 ## 🏃‍♂️ Getting Started
 
@@ -77,7 +77,6 @@ pyaar-ca/
 │   │   ├── results/      # Results page
 │   │   └── privacy-policy/ # Privacy policy
 │   ├── components/       # React components
-│   │   └── EzoicAd.tsx  # Ad component
 │   └── lib/              # Utility functions
 ├── public/               # Static assets
 │   ├── robots.txt       # SEO configuration
@@ -136,7 +135,7 @@ This project is licensed under the MIT License.
 - Dr. Gary Chapman for the 5 Love Languages concept
 - Next.js and Tailwind CSS communities
 - Cloudflare for their hosting services
-- Ezoic for ad monetization solutions
+- Google AdSense for advertising solutions
 
 ## 📞 Contact
 Questions or feedback? Visit [https://pyaar.ca](https://pyaar.ca) or open an issue on GitHub.
