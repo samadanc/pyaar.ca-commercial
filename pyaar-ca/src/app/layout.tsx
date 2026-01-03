@@ -5,6 +5,19 @@ export const metadata: Metadata = {
   title: "Pyaar.ca - Discover Your Love Language Compatibility",
   description: "Find out your love language and discover if you and your partner are truly compatible. Take our free compatibility quiz today!",
   keywords: ["love language", "relationship compatibility", "couples quiz", "love compatibility test"],
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+  },
   openGraph: {
     title: "Pyaar.ca - Love Language Compatibility Test",
     description: "Discover your love language and find out if you're compatible with your partner",
